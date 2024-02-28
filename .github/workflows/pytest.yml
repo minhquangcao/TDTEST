@@ -20,4 +20,5 @@ jobs:
         pip install pytest
     - name: Analysing the code with pylint
       run: |
-        pytest 
+        pytest --cov=. --cov-fail-under=80 
+    
